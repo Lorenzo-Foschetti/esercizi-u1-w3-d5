@@ -17,6 +17,7 @@ console.log(sum);
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
+let random = Math.random() * 20;
 
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
@@ -47,12 +48,15 @@ console.log(skills);
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
+skills.pop();
+console.log(skills);
 
 // Funzioni
 
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
+const dice = function () {};
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
@@ -71,9 +75,10 @@ whoIsBigger(3, 6);
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
 const splitMe = function (string) {
-  const string2 = string.split(" ");
+  return string.split(" ");
 };
 splitMe("ciao epicode");
+
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
@@ -88,11 +93,19 @@ splitMe("ciao epicode");
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
-const isThisAnEmail = function (str) {};
+//const isThisAnEmail = function (str) {
+//  if (str.includes("@")) {
+//   console.log("E' un e-mail");
+//  } else {
+//   console.log("Non è un e-mail");
+// }
+//};
+//isThisAnEmail();
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+const whatDayIsIt = function () {};
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
