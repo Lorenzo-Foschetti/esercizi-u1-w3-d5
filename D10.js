@@ -17,7 +17,7 @@ console.log(sum);
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
-let random = Math.random() * 20;
+let random = Math.random() * 21;
 
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
@@ -93,6 +93,7 @@ splitMe("ciao epicode");
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
+
 //const isThisAnEmail = function (str) {
 //  if (str.includes("@")) {
 //   console.log("E' un e-mail");
@@ -105,7 +106,20 @@ splitMe("ciao epicode");
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
-const whatDayIsIt = function () {};
+const whatDayIsIt = () => {
+  const giorniDellaSettimana = [
+    "Domenica",
+    "Lunedì",
+    "Martedì",
+    "Mercoledì",
+    "Giovedì",
+    "Venerdì",
+    "Sabato",
+  ];
+  const dataDiOggi = new Date().getDay();
+  return giorniDellaSettimana[dataDiOggi];
+};
+whatDayIsIt();
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -322,7 +336,7 @@ console.log(sumAllTheYears(movies));
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
-const container = document.getElementById("conatiner");
+const container = document.getElementById("container");
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
