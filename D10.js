@@ -106,20 +106,6 @@ splitMe("ciao epicode");
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
-const whatDayIsIt = () => {
-  const giorniDellaSettimana = [
-    "Domenica",
-    "Lunedì",
-    "Martedì",
-    "Mercoledì",
-    "Giovedì",
-    "Venerdì",
-    "Sabato",
-  ];
-  const dataDiOggi = new Date().getDay();
-  return giorniDellaSettimana[dataDiOggi];
-};
-whatDayIsIt();
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -347,10 +333,14 @@ const allTd = document.querySelectorAll("td");
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
-const td = document.querySelectorAll("td");
-const tdTable = function () {
-  for (let i = 0; i < td.length; i++);
+const tdText = function () {
+  const td = document.querySelectorAll("td");
+
+  td.forEach((td) => {
+    console.log(td.textContent);
+  });
 };
+tdText();
 
 console.log(td);
 /* ESERCIZIO 23
